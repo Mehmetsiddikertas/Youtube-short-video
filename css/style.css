@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+nav .leftside{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+nav .leftside img{
+    width: 90px;
+    height: auto;
+    object-fit: cover;
+    padding-left: 20px;
+}
+nav .centerside{
+    width: 550px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.centerside .center-input{
+    width: 95%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #f0f0f0;
+    border-radius: 15px;
+}
+.center-input input{
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-indent: 20px;
+    font-size: 18px;
+}
+
+.center-input button{
+    width: 10%;
+    height: 40px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.center-icon{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav .rightside{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .rightside img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.rightside button{
+    font-size: 17px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: gray;
+}
+.sidebar{
+    flex: 0.8;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.sidebar .sidebar-links li{
+    width: 180px;
+    padding: 8px 15px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.sidebar .sidebar-links li:hover{
+    background: #f0f0f0;
+}
+.sidebar-links li a{
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+.sidebar .border-side{
+    border-bottom: 1px solid #f0f0f0;
+}
+.sidebar .border-side img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.border-side p{
+    padding: 10px 0 0 30px;
+}
+.shortside{
+    flex: 4;
+    height: calc(100vh - 60px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-video{
+    width: 410px;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.video-side{
+    width: 350px;
+    height: 550px;
+    border-radius: 10px;
+    position: relative;
+}
+.video-side video{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    position: relative;
+    cursor: pointer;
+}
+.video-side .video-navbar{
+    width: 350px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+.video-navbar button{
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.video-side .video-footer .video-footer-p{
+    width: 350px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 50px;
+}
+.video-side .video-footer .video-footer-p p{
+    font-size: 13px;
+    color: white;
+}
+.video-side .video-footer .video-footer-btn{
+    width: 350px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 0px;
+}
+.video-side .video-footer .video-footer-btn img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    text-align: center;
+}
+.video-side .video-footer .video-footer-btn .footer-btn-right{
+    width: 90px;
+    height: 30px;
+    background: white;
+    z-index: 1;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+.video-side .video-footer .video-footer-btn .footer-btn-left{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    outline: none;
+    color: white;
+    background: none;
+}
+.icon-side{
+    width: 60px;
+    height: 550px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 5px;
+}
+.icon-side .icon-btn-side{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.icon-side button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    line-height: 35px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.icon-side .ad-side{
+    width: 40px;
+    height: 40px;
+
+}
+.ad-side img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.up-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.up-btn:hover{
+    background: #d9d9d9;
+}
+.down-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+.down-btn:hover{
+    background: #d9d9d9;
+}
