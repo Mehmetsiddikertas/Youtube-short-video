@@ -10,7 +10,7 @@ Hello, welcome to this lesson. Today I create with html and css file for Youtube
 
 ## ## RULES OF USE
 
-> *STEP-1:* `https://github.com/cavidsuleyman/.git` <br/>
+> *STEP-1:* `https://github.com/Mehmetsiddikertas/Youtube-short-video.git` <br/>
 > *STEP-2:*  enter the `Youtube-short-video` folder that appears <br/>
 > *STEP-3:*  open the folder you are in in a text editor <br/>
 > *STEP-4:*  run the  all the`index.html` files in the main folder <br/>
@@ -26,8 +26,7 @@ This project was developed using the following technologies
 | 1 | HTML | Building a project skeleton |
 | 2 | CSS |  Make-up of the established skeleton |
 | 3 | GIT |  Project version control management |
-| 4 | JS | Dynamic operations |
-| 5 | VSCode | Text editor used in the project |
+| 4 | VSCode | Text editor used in the project |
 
 
 ## SAMPLE SCREEN APPEARANCE
